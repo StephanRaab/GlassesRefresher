@@ -37,5 +37,18 @@ Console.WriteLine($"Fizz Count: {fizzCount}");
 Console.WriteLine($"Buzz Count: {buzzCount}");
 Console.WriteLine($"Number Count: {failCount}");
 
+Console.WriteLine("==========");
 
+Console.WriteLine("Enter your message:");
+string message = Console.ReadLine();
+
+if (!string.IsNullOrEmpty(message))
+{
+    for (int i = 0; i < message.Length; i++)
+    {
+        // Console.WriteLine(message[i]);
+        Console.Write(message[(message.Length-1)-i]);
+    }
+}
+Console.WriteLine("==========");
 
