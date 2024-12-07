@@ -3,6 +3,7 @@ int max = Convert.ToInt32(Console.ReadLine());
 int fizzbuzzCount = 0;
 int fizzCount = 0;
 int buzzCount = 0;
+int failCount = 0;
 
 for (int i = 1; i <= max; i++)
 {
@@ -14,17 +15,22 @@ for (int i = 1; i <= max; i++)
     {
         Console.WriteLine("Fizz");
         fizzCount++;
-    }
-    else
+    } else if (i % 5 == 0)
     {
         Console.WriteLine("Buzz");
         buzzCount++;
+    }
+    else
+    {
+        Console.WriteLine(i);
+        failCount++;
     }
 }
 
 Console.WriteLine($"FizzBuzz Count: {fizzbuzzCount}");
 Console.WriteLine($"Fizz Count: {fizzCount}");
 Console.WriteLine($"Buzz Count: {buzzCount}");
+Console.WriteLine($"Number Count: {failCount}");
 
 
 
