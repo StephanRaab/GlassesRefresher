@@ -1,5 +1,7 @@
 ﻿Console.WriteLine("How many times do you want to play fizzbuzz?");
 int max = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("=================================");
+
 int fizzbuzzCount = 0;
 int fizzCount = 0;
 int buzzCount = 0;
