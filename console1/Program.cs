@@ -51,3 +51,41 @@ if (!string.IsNullOrEmpty(message))
 }
 Console.WriteLine("\n==========");
 
+// ask user to enter password
+// ask them to enter password again
+// check that they both contain something
+// if yes, check that they are the same
+// if they are, print "they match"
+// else, print "passwords don't match"
+// if they are empty, print "please enter a password"
+
+string? password = string.Empty;
+string? confirmPassword = string.Empty;
+bool match = false;
+
+while (!match)
+{
+    Console.Write("Please enter your password: ");
+    password = Console.ReadLine();
+    
+    Console.Write("Please confirm your password: ");
+    confirmPassword = Console.ReadLine();
+
+    if (string.IsNullOrEmpty(password) || string.IsNullOrEmpty(confirmPassword))
+    {
+        Console.WriteLine("Can't leave your password empty");
+    }
+
+    if (password != null && password.Equals(confirmPassword))
+    {
+        Console.WriteLine("Passwords match");
+        match = true;
+    }
+    else
+    {
+        Console.WriteLine("Passwords don't match");
+    }
+}
+
+Console.WriteLine("\n==========");
+
