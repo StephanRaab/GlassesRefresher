@@ -89,3 +89,31 @@ while (!match)
 
 Console.WriteLine("\n==========");
 
+/*
+create two lists with integer data type
+loop from 0 - 20
+    if even, add to evenlist
+    if odd, add to odd list
+    
+    print both lists*/
+
+List<int> evenList= new List<int>();
+List<int> oddList = new List<int>();
+
+for (int i = 0; i < 20; i++)
+{
+    if (i % 2 == 0)
+    {
+        evenList.Add(i);
+    }
+    else
+    {
+        oddList.Add(i);
+    }
+}
+
+
+Console.WriteLine($"Even numbers are {string.Join(", ", evenList)}");
+Console.WriteLine($"Odd numbers are {string.Join(", ", oddList)}");
+
+Console.WriteLine("\n==========");
