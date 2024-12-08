@@ -44,11 +44,10 @@ string message = Console.ReadLine();
 
 if (!string.IsNullOrEmpty(message))
 {
-    for (int i = 0; i < message.Length; i++)
+    for (int i = message.Length-1; i >= 0; i--)
     {
-        // Console.WriteLine(message[i]);
-        Console.Write(message[(message.Length-1)-i]);
+        Console.Write(message[i]);
     }
 }
-Console.WriteLine("==========");
+Console.WriteLine("\n==========");
 
