@@ -112,8 +112,31 @@ for (int i = 0; i < 20; i++)
     }
 }
 
-
 Console.WriteLine($"Even numbers are {string.Join(", ", evenList)}");
 Console.WriteLine($"Odd numbers are {string.Join(", ", oddList)}");
+
+Console.WriteLine("\n==========");
+
+/* create and print array that takes in (num, length) and spits out the multiplication table
+(7, 5) => (7, 14, 21, 28, 35]*/
+
+Console.WriteLine("What do you want the multiplication table for?");
+int multiplication = Convert.ToInt32(Console.ReadLine());
+
+Console.WriteLine("How many do you want?");
+int multiplier = Convert.ToInt32(Console.ReadLine());
+
+static void Multiply(int num, int length)
+{
+    List<int> result = new List<int>();
+    for (int i = 1; i <= length; i++)
+    {
+        result.Add(num * i);
+    }
+
+    Console.WriteLine($"Multiply numbers are {string.Join(", ", result)}");
+}
+
+Multiply(multiplication, multiplier);
 
 Console.WriteLine("\n==========");
