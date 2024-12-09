@@ -4,6 +4,14 @@ using console1.Coupling;
 using console1.Polymorphism;
 
 Console.WriteLine("\n==========");
+/* Composition
+ Involves creating complex objects by combining simpler objects or components.
+ Often described to have a "has-a" relationship => 
+*/
+
+
+
+Console.WriteLine("\n==========");
 /* Coupling
  The degree of dependency between classes
 */
