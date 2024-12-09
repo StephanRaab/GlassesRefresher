@@ -2,10 +2,16 @@
 
 public class Order
 {
+    private readonly INotificationService _notificationService;
+
+    public Order(INotificationService notificationService)
+    {
+        _notificationService = notificationService;
+    }
+    
     public void PlaceOrder()
     {
         // place order logic
-        EmailSender emailSender = new EmailSender();
-        emailSender.SendNotification("Order has been placed successfully");
+        _notificationService.SendNotification("Order placed");
     }
 }
