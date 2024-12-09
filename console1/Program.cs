@@ -10,6 +10,18 @@ Console.WriteLine("\n==========");
 /* Composition
  Involves creating complex objects by combining simpler objects or components.
  Often described to have a "has-a" relationship => car has an engine, wheels, seats, etc
+ 
+ Composition vs Inheritance
+ Composition:
+ - need more flexibility in constructing objects by assembling smaller, reusable components 
+ - where there is no clear "is-a" relationship between classes
+ - when you want to avoid limitations of inheritance, such as tight coupling and fragile base-class problem
+ 
+ Inheritance:
+ - When there's a clear "is-a" class relationship
+ - When you want to promote code reuse by inheriting properties and behaviors from existing classes
+ - When you want to leverage polymorphism to allow objects of different subclasses to be treated uniformly through their
+ common superclass interface
 */
 
 CompCar compositionCar = new CompCar();
