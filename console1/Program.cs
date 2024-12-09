@@ -3,6 +3,13 @@ using console1.Abstraction;
 using console1.Inheritance;
 
 Console.WriteLine("\n==========");
+/* Polymorphism (poly = many, morph = forms)
+ It's the ability for an object to take many forms
+*/
+
+
+
+Console.WriteLine("\n==========");
 /* Inheritance
 involves creating new classes (subclasses and derived) based on existing classes (superclasses, or base classes)
 subclasses inherit properties and behaviors from their superclasses and can also add new features or override
