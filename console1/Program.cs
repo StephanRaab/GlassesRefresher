@@ -1,5 +1,13 @@
 ﻿using console1;
 using console1.Abstraction;
+Console.WriteLine("\n==========");
+/* Inheritance
+involves creating new classes (subclasses and derived) based on existing classes (superclasses, or base classes)
+subclasses inherit properties and behaviors from their superclasses and can also add new features or override
+existing ones. Inheritance is often described in terms of an "is-a" relationship => circle is a shape (inherits from shape superclass/base class) 
+*/
+
+
 
 Console.WriteLine("\n==========");
 // Abstraction
