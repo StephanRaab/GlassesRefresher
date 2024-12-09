@@ -1,7 +1,19 @@
-﻿// Encapsulation
+﻿using console1;
 
-using console1;
+Console.WriteLine("\n==========");
+// Encapsulation
 
+BankAccount account = new BankAccount(500);
+Console.WriteLine($"Current Balance: {account.GetBalance()}");
+
+account.Deposit(100);
+Console.WriteLine($"Current Balance: {account.GetBalance()}");
+
+account.Withdraw(200);
+Console.WriteLine($"Current Balance: {account.GetBalance()}");
+
+Console.WriteLine("\n==========");
+// BAD Encapsulation
 BadBankAccount badAccount = new BadBankAccount();
 badAccount.balance = 100;
 
