@@ -1,29 +1,20 @@
 ﻿using console1;
 using console1.Abstraction;
 using console1.Polymorphism;
-using Car = console1.Inheritance.Car;
 
 Console.WriteLine("\n==========");
 /* Polymorphism (poly = many, morph = forms)
  It's the ability for an object to take many forms
 */
 
-List<object> vehicles = new List<object>();
+List<Vehicle> vehicles = new List<Vehicle>();
 vehicles.Add(new Car{Brand = "Toyota", Model = "Yaris", Year = "2007", NumberOfDoors = 3, NumberOfWheels = 4});
 vehicles.Add(new Motorcycle{Brand = "Indian", Model = "Sportster", Year = "2005"});
 
 // vehicle inspection
 foreach (var vehicle in vehicles)
 {
-    if (vehicle is Car) // check if object is indeed a car, not a banana for instance. There's no guarantee that an any object has Start() method
-    {
-        Car car = (Car)vehicle; // first need to cast from generic object to specific car type
-        car.Start();
-    } else if (vehicle is Motorcycle)
-    {
-        Motorcycle motorcycle = (Motorcycle)vehicle;
-        motorcycle.Start();
-    }
+   vehicle.Start();
 }
 
 Console.WriteLine("\n==========");
