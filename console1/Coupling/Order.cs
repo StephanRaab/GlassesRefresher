@@ -6,6 +6,6 @@ public class Order
     {
         // place order logic
         EmailSender emailSender = new EmailSender();
-        emailSender.SendEmail("Order has been placed successfully");
+        emailSender.SendNotification("Order has been placed successfully");
     }
 }

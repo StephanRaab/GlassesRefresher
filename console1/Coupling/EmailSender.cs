@@ -1,10 +1,9 @@
 ﻿namespace console1.Coupling;
 
-public class EmailSender
+public class EmailSender : INotificationService
 {
-    public void SendEmail(string message)
+    public void SendNotification(string message)
     {
-        // email sending logic
         Console.WriteLine($"Sending email: {message}");
     }
 }
