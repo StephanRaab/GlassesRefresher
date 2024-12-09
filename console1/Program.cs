@@ -1,6 +1,15 @@
 ﻿using console1;
 using console1.Abstraction;
+using console1.Coupling;
 using console1.Polymorphism;
+
+Console.WriteLine("\n==========");
+/* Coupling
+ The degree of dependency between classes
+*/
+
+Order order = new Order();
+order.PlaceOrder();
 
 Console.WriteLine("\n==========");
 /* Polymorphism (poly = many, morph = forms)
