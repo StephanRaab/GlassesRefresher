@@ -1,4 +1,17 @@
 ﻿using console1;
+using console1.Abstraction;
+
+Console.WriteLine("\n==========");
+// Abstraction
+// reduce complexity by hiding unnecessary details
+// pressing 'channel 2' button will change the channel. You don't need to know how everything is working to get you there.
+
+// base solution with problems
+EmailService emailService = new EmailService();
+emailService.Connect();
+emailService.Authenticate();
+emailService.SendEmail();
+emailService.Disconnect();
 
 Console.WriteLine("\n==========");
 // Encapsulation
