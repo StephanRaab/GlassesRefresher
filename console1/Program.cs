@@ -2,14 +2,18 @@
 using console1.Abstraction;
 using console1.Coupling;
 using console1.Polymorphism;
+using InheritCar = console1.Inheritance.Car;
+using CompCar = console1.Composition.Car;
+using PolyCar = console1.Polymorphism.Car;
 
 Console.WriteLine("\n==========");
 /* Composition
  Involves creating complex objects by combining simpler objects or components.
- Often described to have a "has-a" relationship => 
+ Often described to have a "has-a" relationship => car has an engine, wheels, seats, etc
 */
 
-
+CompCar compositionCar = new CompCar();
+compositionCar.StartCar();
 
 Console.WriteLine("\n==========");
 /* Coupling
@@ -25,7 +29,7 @@ Console.WriteLine("\n==========");
 */
 
 List<Vehicle> vehicles = new List<Vehicle>();
-vehicles.Add(new Car{Brand = "Toyota", Model = "Yaris", Year = "2007", NumberOfDoors = 3, NumberOfWheels = 4});
+vehicles.Add(new PolyCar{Brand = "Toyota", Model = "Yaris", Year = "2007", NumberOfDoors = 3, NumberOfWheels = 4});
 vehicles.Add(new Motorcycle{Brand = "Indian", Model = "Sportster", Year = "2005"});
 
 // vehicle inspection
@@ -41,7 +45,7 @@ subclasses inherit properties and behaviors from their superclasses and can also
 existing ones. Inheritance is often described in terms of an "is-a" relationship => circle is a shape (inherits from shape superclass/base class) 
 */
 
-var inheritCar = new Car
+var inheritCar = new InheritCar
 {
     NumberOfDoors = 2, // unique
     Brand = "Ford", // shared

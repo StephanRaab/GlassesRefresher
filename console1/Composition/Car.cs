@@ -2,14 +2,14 @@
 
 public class Car
 {
-    private Chassis _chassis = new Chassis();
-    private Engine _engine = new Engine();
-    private Seats _seats = new Seats();
-    private Wheels _wheels = new Wheels();
+    private readonly Chassis _chassis = new Chassis();
+    private readonly Engine _engine = new Engine();
+    private readonly Seats _seats = new Seats();
+    private readonly Wheels _wheels = new Wheels();
 
     public void StartCar()
     {
-        _chassis.Support();
+        _chassis.Support(); // car is delegating work with nice action verbs
         _engine.Start();
         _seats.Sit();
         _wheels.Rotate();

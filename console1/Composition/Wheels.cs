@@ -4,6 +4,6 @@ public class Wheels
 {
     public void Rotate()
     {
-        Console.WriteLine("Rotating");
+        Console.WriteLine("Wheels are rotating");
     }
 }
