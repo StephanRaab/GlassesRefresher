@@ -90,12 +90,13 @@ while (!match)
 Console.WriteLine("\n==========");
 
 /*
-create two lists with integer data type
-loop from 0 - 20
+ * create two lists with integer data type
+loop from 0 to 20
     if even, add to evenlist
     if odd, add to odd list
     
-    print both lists*/
+    print both lists
+ */
 
 List<int> evenList= new List<int>();
 List<int> oddList = new List<int>();
@@ -140,3 +141,31 @@ static void Multiply(int num, int length)
 Multiply(multiplication, multiplier);
 
 Console.WriteLine("\n==========");
+
+/*
+ * create a method that takes in an array, and returns the total sum of the array
+ */
+
+static bool SumOfArray(int[] nums, out int sumTotal)
+{
+    sumTotal = 0;
+    if (nums.Length > 0)
+    {
+        foreach (int num in nums)
+        {
+            sumTotal += num;
+        }    
+        return true;
+    }
+    return false;
+}
+
+int[] numbers =
+[
+    1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12
+];
+
+if (SumOfArray(numbers, out int sum))
+{
+    Console.WriteLine("The total sum of the array is: " + sum);
+};
