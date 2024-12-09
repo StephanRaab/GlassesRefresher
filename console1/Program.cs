@@ -8,10 +8,7 @@ Console.WriteLine("\n==========");
 
 // base solution with problems
 EmailService emailService = new EmailService();
-emailService.Connect();
-emailService.Authenticate();
-emailService.SendEmail();
-emailService.Disconnect();
+emailService.SendEmail(); // all complexity has been encapsulated and abstracted away within the service class
 
 Console.WriteLine("\n==========");
 // Encapsulation
