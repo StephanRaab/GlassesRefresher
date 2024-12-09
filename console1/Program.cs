@@ -1,4 +1,15 @@
-﻿Console.WriteLine("How many times do you want to play fizzbuzz?");
+﻿// Encapsulation
+
+using console1;
+
+BadBankAccount badAccount = new BadBankAccount();
+badAccount.balance = 100;
+
+Console.WriteLine(badAccount.balance);
+
+Console.WriteLine("\n==========");
+
+Console.WriteLine("How many times do you want to play fizzbuzz?");
 int max = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("==========");
 
@@ -169,3 +180,5 @@ if (SumOfArray(numbers, out int sum))
 {
     Console.WriteLine("The total sum of the array is: " + sum);
 };
+
+Console.WriteLine("\n==========");
