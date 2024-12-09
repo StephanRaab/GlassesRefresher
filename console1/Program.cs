@@ -1,13 +1,30 @@
 ﻿using console1;
 using console1.Abstraction;
-using console1.Inheritance;
+using console1.Polymorphism;
+using Car = console1.Inheritance.Car;
 
 Console.WriteLine("\n==========");
 /* Polymorphism (poly = many, morph = forms)
  It's the ability for an object to take many forms
 */
 
+List<object> vehicles = new List<object>();
+vehicles.Add(new Car{Brand = "Toyota", Model = "Yaris", Year = "2007", NumberOfDoors = 3, NumberOfWheels = 4});
+vehicles.Add(new Motorcycle{Brand = "Indian", Model = "Sportster", Year = "2005"});
 
+// vehicle inspection
+foreach (var vehicle in vehicles)
+{
+    if (vehicle is Car) // check if object is indeed a car, not a banana for instance. There's no guarantee that an any object has Start() method
+    {
+        Car car = (Car)vehicle; // first need to cast from generic object to specific car type
+        car.Start();
+    } else if (vehicle is Motorcycle)
+    {
+        Motorcycle motorcycle = (Motorcycle)vehicle;
+        motorcycle.Start();
+    }
+}
 
 Console.WriteLine("\n==========");
 /* Inheritance
@@ -16,15 +33,15 @@ subclasses inherit properties and behaviors from their superclasses and can also
 existing ones. Inheritance is often described in terms of an "is-a" relationship => circle is a shape (inherits from shape superclass/base class) 
 */
 
-var car = new Car
+var inheritCar = new Car
 {
     NumberOfDoors = 2, // unique
     Brand = "Ford", // shared
     Model = "F150",
     Year = "1990"
 };
-car.Start();
-car.Stop();
+inheritCar.Start();
+inheritCar.Stop();
 
 Console.WriteLine("\n==========");
 // Abstraction
