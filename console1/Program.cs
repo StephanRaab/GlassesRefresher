@@ -8,7 +8,7 @@ Console.WriteLine("\n==========");
  The degree of dependency between classes
 */
 
-Order order = new Order(new EmailSender());
+Order order = new Order(new SmsSender());
 order.PlaceOrder();
 
 Console.WriteLine("\n==========");
