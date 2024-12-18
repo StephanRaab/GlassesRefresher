@@ -6,6 +6,20 @@ using InheritCar = console1.Inheritance.Car;
 using CompCar = console1.Composition.Car;
 using PolyCar = console1.Polymorphism.Car;
 Console.WriteLine("\n==========\n");
+
+IEnemy dragon = new Dragon();
+IEnemy vampire = new Vampire();
+
+List<IEnemy> enemies = new List<IEnemy>();
+enemies.Add(dragon);
+enemies.Add(vampire);
+
+foreach (IEnemy enemy in enemies)
+{
+    enemy.Attack();
+}
+
+Console.WriteLine("\n==========\n");
 Book book = new Book
 {
     Title = "Harry Potter",
