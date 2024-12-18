@@ -11,20 +11,52 @@ public partial class Form1 : Form
 
     private void CreateAccountBtn_Click(object sender, EventArgs e)
     {
+        if (string.IsNullOrEmpty(OwnerInput.Text))
+            return;
+        
         BankAccount bankAccount = new BankAccount(OwnerInput.Text);
-        BankAccounts.Add(bankAccount);
+        BankAccounts.Add(bankAccount);       
 
         RefreshGrid();
+        OwnerInput.Text = string.Empty; // set input back to empty after adding owner
+        OwnerInput.Focus(); // set focus back on the input
     }
 
     private void DepositBtn_Click(object sender, EventArgs e)
     {
+        // select owner
+        // get amount input --> AmountInput.Text
+        // make sure amount > 0
+        // make sure only single row is selected
+        // owner.Balance += AmountInput.Text
 
+        if (BankAccountsGrid.SelectedRows.Count == 1 && AmountInput.Value > 0)
+        {
+            BankAccount selectedBankAccount = BankAccountsGrid.SelectedRows[0].DataBoundItem as BankAccount;
+            selectedBankAccount.Balance += AmountInput.Value;
+
+            RefreshGrid();
+            AmountInput.Value = 0;
+        }
     }
 
     private void WithdrawBtn_Click(object sender, EventArgs e)
     {
+        // select owner
+        // withdraw amount
+        // owner.Balance -= AmountInput.Text;
+        // if AmountInput.Text > owner.Balance, show error
 
+        if (BankAccountsGrid.SelectedRows.Count == 1 && AmountInput.Value > 0)
+        {
+            BankAccount selectedBankAccount = BankAccountsGrid.SelectedRows[0].DataBoundItem as BankAccount;
+            if (AmountInput.Value > selectedBankAccount.Balance)
+                return;// show error
+            selectedBankAccount.Balance -= AmountInput.Value;
+
+            RefreshGrid();
+            AmountInput.Value = 0;
+        }
     }
 
     private void RefreshGrid()
