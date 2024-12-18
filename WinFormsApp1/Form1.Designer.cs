@@ -69,6 +69,7 @@ partial class Form1
         // AmountInput
         // 
         AmountInput.Location = new Point(107, 395);
+        AmountInput.Maximum = new decimal(new int[] { 999999999, 0, 0, 0 });
         AmountInput.Name = "AmountInput";
         AmountInput.Size = new Size(120, 23);
         AmountInput.TabIndex = 3;
