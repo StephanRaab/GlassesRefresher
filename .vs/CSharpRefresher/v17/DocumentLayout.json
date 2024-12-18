@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\thest\\RiderProjects\\CSharpRefresher\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7CD37DC3-7F35-4EF9-BE01-E966D060E857}|WinFormsApp1\\WinFormsApp1.csproj|c:\\users\\thest\\riderprojects\\csharprefresher\\winformsapp1\\bankaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7CD37DC3-7F35-4EF9-BE01-E966D060E857}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\bankaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E3376EF3-4C7B-42EB-BFF6-24863D55183C}|console1\\console1.csproj|c:\\users\\thest\\riderprojects\\csharprefresher\\console1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E3376EF3-4C7B-42EB-BFF6-24863D55183C}|console1\\console1.csproj|solutionrelative:console1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E3376EF3-4C7B-42EB-BFF6-24863D55183C}|console1\\console1.csproj|c:\\users\\thest\\riderprojects\\csharprefresher\\console1\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E3376EF3-4C7B-42EB-BFF6-24863D55183C}|console1\\console1.csproj|solutionrelative:console1\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7CD37DC3-7F35-4EF9-BE01-E966D060E857}|WinFormsApp1\\WinFormsApp1.csproj|c:\\users\\thest\\riderprojects\\csharprefresher\\winformsapp1\\savingsaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7CD37DC3-7F35-4EF9-BE01-E966D060E857}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\savingsaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CD37DC3-7F35-4EF9-BE01-E966D060E857}|WinFormsApp1\\WinFormsApp1.csproj|c:\\users\\thest\\riderprojects\\csharprefresher\\winformsapp1\\bankaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7CD37DC3-7F35-4EF9-BE01-E966D060E857}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\bankaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7CD37DC3-7F35-4EF9-BE01-E966D060E857}|WinFormsApp1\\WinFormsApp1.csproj|c:\\users\\thest\\riderprojects\\csharprefresher\\winformsapp1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -26,24 +34,50 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Book.cs",
+              "DocumentMoniker": "C:\\Users\\thest\\RiderProjects\\CSharpRefresher\\console1\\Book.cs",
+              "RelativeDocumentMoniker": "console1\\Book.cs",
+              "ToolTip": "C:\\Users\\thest\\RiderProjects\\CSharpRefresher\\console1\\Book.cs",
+              "RelativeToolTip": "console1\\Book.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-18T17:07:01.43Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\thest\\RiderProjects\\CSharpRefresher\\console1\\Program.cs",
+              "RelativeDocumentMoniker": "console1\\Program.cs",
+              "ToolTip": "C:\\Users\\thest\\RiderProjects\\CSharpRefresher\\console1\\Program.cs",
+              "RelativeToolTip": "console1\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-18T17:06:49.315Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "BankAccount.cs",
               "DocumentMoniker": "C:\\Users\\thest\\RiderProjects\\CSharpRefresher\\WinFormsApp1\\BankAccount.cs",
               "RelativeDocumentMoniker": "WinFormsApp1\\BankAccount.cs",
               "ToolTip": "C:\\Users\\thest\\RiderProjects\\CSharpRefresher\\WinFormsApp1\\BankAccount.cs",
               "RelativeToolTip": "WinFormsApp1\\BankAccount.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAwwCEAAAA6AAAAAAAAAA==",
+              "ViewState": "AgIAAAQAAAAAAAAAAAA8wBsAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-18T16:35:46.95Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "SavingsAccount.cs",
               "DocumentMoniker": "C:\\Users\\thest\\RiderProjects\\CSharpRefresher\\WinFormsApp1\\SavingsAccount.cs",
               "RelativeDocumentMoniker": "WinFormsApp1\\SavingsAccount.cs",
@@ -56,7 +90,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\thest\\RiderProjects\\CSharpRefresher\\WinFormsApp1\\Form1.cs",
               "RelativeDocumentMoniker": "WinFormsApp1\\Form1.cs",
@@ -68,7 +102,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\thest\\RiderProjects\\CSharpRefresher\\WinFormsApp1\\Form1.cs",
               "RelativeDocumentMoniker": "WinFormsApp1\\Form1.cs",

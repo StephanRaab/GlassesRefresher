@@ -5,6 +5,15 @@ using console1.Polymorphism;
 using InheritCar = console1.Inheritance.Car;
 using CompCar = console1.Composition.Car;
 using PolyCar = console1.Polymorphism.Car;
+Console.WriteLine("\n==========\n");
+Book book = new Book
+{
+    Title = "Harry Potter",
+    Author = "J.K. Rowling",
+    Year = 1997
+};
+
+book.ShowInfo();
 
 Console.WriteLine("\n==========");
 /* Composition
