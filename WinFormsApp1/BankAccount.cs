@@ -4,7 +4,7 @@ public class BankAccount
 {
     public string Owner { get; set; }
     public Guid BankAccountNumber { get; set; }
-    public decimal Balance { get; private set; }
+    public decimal Balance { get; protected set; }
     
     public BankAccount(string owner)
     {
@@ -13,7 +13,7 @@ public class BankAccount
         Balance = 0;
     }
 
-    public string Deposit(decimal amount)
+    public virtual string Deposit(decimal amount)
     {
         if (amount <= 0)
             return $"You can't deposit ${amount}.";        
@@ -22,7 +22,7 @@ public class BankAccount
             return "AML deposit limit of $20,000 reached.";
 
         Balance += amount;
-        return $"${amount} successfully deposited into your account.";
+        return $"Successfully deposited into your account.";
     }
 
     public string Withdraw(decimal amount)
@@ -34,6 +34,6 @@ public class BankAccount
             return $"You only have ${Balance} available.";
 
         Balance -= amount;
-            return $"${amount} successfully withdrawn. Your new balance is ${Balance}.";
+            return $"Successfully withdrawn. Your new balance is ${Balance}.";
     }
 }

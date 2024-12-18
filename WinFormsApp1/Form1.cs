@@ -12,20 +12,13 @@ public partial class Form1 : Form
     private void CreateAccountBtn_Click(object sender, EventArgs e)
     {
         if (string.IsNullOrEmpty(OwnerInput.Text))
-            return;
-
-        BankAccount bankAccount;
+            return;        
 
         if (InterestRateInput.Value > 0)
-        {
-            bankAccount = new SavingsAccount($"{OwnerInput.Text} ({InterestRateInput.Value}%)", InterestRateInput.Value);
-        } else
-        {
-            bankAccount = new BankAccount(OwnerInput.Text);
-        }
+            BankAccounts.Add(new SavingsAccount(OwnerInput.Text, InterestRateInput.Value));
+        else
+            BankAccounts.Add(new BankAccount(OwnerInput.Text));
         
-        BankAccounts.Add(bankAccount);
-
         RefreshGrid();
         OwnerInput.Text = string.Empty; // set input back to empty after adding owner
         OwnerInput.Focus(); // set focus back on the input
