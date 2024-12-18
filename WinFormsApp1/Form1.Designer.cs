@@ -37,14 +37,17 @@ partial class Form1
         DepositBtn = new Button();
         WithdrawBtn = new Button();
         CreateAccountBtn = new Button();
+        InterestRateInput = new NumericUpDown();
+        label3 = new Label();
         ((System.ComponentModel.ISupportInitialize)AmountInput).BeginInit();
         ((System.ComponentModel.ISupportInitialize)BankAccountsGrid).BeginInit();
+        ((System.ComponentModel.ISupportInitialize)InterestRateInput).BeginInit();
         SuspendLayout();
         // 
         // label1
         // 
-        label1.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-        label1.Location = new Point(14, 17);
+        label1.Font = new Font("Segoe UI", 12F);
+        label1.Location = new Point(14, 23);
         label1.Name = "label1";
         label1.Size = new Size(84, 34);
         label1.TabIndex = 0;
@@ -52,8 +55,8 @@ partial class Form1
         // 
         // label2
         // 
-        label2.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-        label2.Location = new Point(14, 389);
+        label2.Font = new Font("Segoe UI", 12F);
+        label2.Location = new Point(14, 395);
         label2.Name = "label2";
         label2.Size = new Size(96, 34);
         label2.TabIndex = 1;
@@ -106,7 +109,7 @@ partial class Form1
         // 
         // CreateAccountBtn
         // 
-        CreateAccountBtn.Location = new Point(97, 63);
+        CreateAccountBtn.Location = new Point(97, 97);
         CreateAccountBtn.Name = "CreateAccountBtn";
         CreateAccountBtn.Size = new Size(130, 40);
         CreateAccountBtn.TabIndex = 7;
@@ -114,11 +117,31 @@ partial class Form1
         CreateAccountBtn.UseVisualStyleBackColor = true;
         CreateAccountBtn.Click += CreateAccountBtn_Click;
         // 
+        // InterestRateInput
+        // 
+        InterestRateInput.DecimalPlaces = 2;
+        InterestRateInput.Increment = new decimal(new int[] { 25, 0, 0, 131072 });
+        InterestRateInput.Location = new Point(156, 57);
+        InterestRateInput.Name = "InterestRateInput";
+        InterestRateInput.Size = new Size(71, 23);
+        InterestRateInput.TabIndex = 9;
+        // 
+        // label3
+        // 
+        label3.Font = new Font("Segoe UI", 12F);
+        label3.Location = new Point(12, 57);
+        label3.Name = "label3";
+        label3.Size = new Size(176, 34);
+        label3.TabIndex = 8;
+        label3.Text = "Interest Rate (%):";
+        // 
         // Form1
         // 
         AutoScaleDimensions = new SizeF(7F, 15F);
         AutoScaleMode = AutoScaleMode.Font;
-        ClientSize = new Size(800, 450);
+        ClientSize = new Size(808, 465);
+        Controls.Add(InterestRateInput);
+        Controls.Add(label3);
         Controls.Add(CreateAccountBtn);
         Controls.Add(WithdrawBtn);
         Controls.Add(DepositBtn);
@@ -131,6 +154,7 @@ partial class Form1
         Text = "Form1";
         ((System.ComponentModel.ISupportInitialize)AmountInput).EndInit();
         ((System.ComponentModel.ISupportInitialize)BankAccountsGrid).EndInit();
+        ((System.ComponentModel.ISupportInitialize)InterestRateInput).EndInit();
         ResumeLayout(false);
         PerformLayout();
     }
@@ -150,4 +174,7 @@ partial class Form1
     private System.Windows.Forms.Label label1;
 
     #endregion
+
+    private NumericUpDown InterestRateInput;
+    private Label label3;
 }

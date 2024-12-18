@@ -13,20 +13,30 @@ public partial class Form1 : Form
     {
         if (string.IsNullOrEmpty(OwnerInput.Text))
             return;
+
+        BankAccount bankAccount;
+
+        if (InterestRateInput.Value > 0)
+        {
+            bankAccount = new SavingsAccount($"{OwnerInput.Text} ({InterestRateInput.Value}%)", InterestRateInput.Value);
+        } else
+        {
+            bankAccount = new BankAccount(OwnerInput.Text);
+        }
         
-        BankAccount bankAccount = new BankAccount(OwnerInput.Text);
-        BankAccounts.Add(bankAccount);       
+        BankAccounts.Add(bankAccount);
 
         RefreshGrid();
         OwnerInput.Text = string.Empty; // set input back to empty after adding owner
         OwnerInput.Focus(); // set focus back on the input
+        InterestRateInput.Value = 0;
     }
 
     private void DepositBtn_Click(object sender, EventArgs e)
     {
         if (BankAccountsGrid.SelectedRows.Count == 1 && AmountInput.Value > 0)
         {
-            BankAccount? selectedBankAccount = BankAccountsGrid.SelectedRows[0].DataBoundItem as BankAccount;            
+            BankAccount? selectedBankAccount = BankAccountsGrid.SelectedRows[0].DataBoundItem as BankAccount;
             string response = selectedBankAccount.Deposit(AmountInput.Value);
 
             RefreshGrid();
