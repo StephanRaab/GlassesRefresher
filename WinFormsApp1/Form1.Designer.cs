@@ -75,6 +75,7 @@ partial class Form1
         // 
         // BankAccountsGrid
         // 
+        BankAccountsGrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
         BankAccountsGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
         BankAccountsGrid.Location = new System.Drawing.Point(252, 23);
         BankAccountsGrid.Name = "BankAccountsGrid";
